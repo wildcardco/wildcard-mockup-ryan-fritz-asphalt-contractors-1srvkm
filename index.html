@@ -2,357 +2,434 @@
 <html lang="en">
 <head>
 <meta name="robots" content="noindex, nofollow">
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fritz Asphalt Contractors | Asphalt Paving in Northwest Indiana</title>
-<meta name="description" content="Fritz Asphalt Contractors: owner-operated asphalt paving, driveways, parking lots, repair, sealcoating and grading across Northwest Indiana. Call (219) 690-0634 for a free estimate.">
+<title>Fritz Asphalt Contractors | Driveways, Parking Lots, Repair &amp; Sealcoating</title>
+<meta name="description" content="Fritz Asphalt Contractors: heavy-duty asphalt paving for residential driveways and commercial parking lots. Repair, patching, sealcoating, grading and site prep. Call (219) 690-0634 for a free paving estimate.">
 <style>
   :root{
-    --black:#141516;
-    --blacktop:#1d1f21;
-    --char:#2a2d30;
-    --slate:#3a3e42;
-    --gray:#8c9196;
-    --light:#d9dcdf;
-    --white:#f4f5f6;
-    --cone:#ff5a0a;
-    --cone-dark:#d94700;
-    --head:"Impact","Haettenschweiler","Arial Narrow Bold","Franklin Gothic Demi Cond","Roboto Condensed","Arial Narrow",sans-serif;
-    --body:"Arial Narrow","Roboto Condensed","Helvetica Neue",Arial,sans-serif;
+    --blacktop:#151617;
+    --charcoal:#1e2022;
+    --asphalt:#2b2e31;
+    --gray:#3c4044;
+    --aggregate:#8c9196;
+    --line:#a9aeb3;
+    --white:#f2f3f4;
+    --orange:#ff6a13;
+    --orange-dark:#d94f00;
+    --head:"Oswald","Bebas Neue","Roboto Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+    --body:"Roboto Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{background:var(--blacktop);color:var(--light);font-family:var(--body);font-size:1.125rem;line-height:1.55;font-stretch:condensed}
+  body{background:var(--blacktop);color:var(--white);font-family:var(--body);font-size:1.0625rem;line-height:1.55;font-stretch:condensed}
   a{color:inherit}
-  img,svg{display:block}
-  h1,h2,h3{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:.02em;line-height:.95;color:var(--white)}
-  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 1.25rem}
-  .skip{position:absolute;left:-999px}
-  .skip:focus{left:1rem;top:1rem;background:var(--cone);color:#000;padding:.5rem 1rem;z-index:99}
+  img{display:block;max-width:100%}
+  .wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 1.25rem}
+  h1,h2,h3{font-family:var(--head);font-weight:800;text-transform:uppercase;line-height:.95;letter-spacing:.01em;font-stretch:condensed}
+  .tag{display:inline-block;font-family:var(--head);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:var(--orange);margin-bottom:.75rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--head);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.05rem;text-decoration:none;padding:1rem 1.5rem;border:3px solid var(--orange);border-radius:2px;transition:background .15s,color .15s}
+  .btn-primary{background:var(--orange);color:var(--blacktop)}
+  .btn-primary:hover,.btn-primary:focus-visible{background:var(--orange-dark);border-color:var(--orange-dark);color:var(--white)}
+  .btn-ghost{background:transparent;color:var(--white);border-color:var(--white)}
+  .btn-ghost:hover,.btn-ghost:focus-visible{background:var(--white);color:var(--blacktop)}
+  :focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 
-  /* buttons: square, heavy */
-  .btn{display:inline-block;font-family:var(--head);text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;text-decoration:none;padding:1rem 1.5rem;border:3px solid var(--cone);background:var(--cone);color:#111;transition:background .15s,color .15s;cursor:pointer}
-  .btn:hover,.btn:focus-visible{background:var(--black);color:var(--cone)}
-  .btn.ghost{background:transparent;color:var(--white);border-color:var(--white)}
-  .btn.ghost:hover,.btn.ghost:focus-visible{background:var(--white);color:#111}
-  :focus-visible{outline:3px solid var(--cone);outline-offset:3px}
+  /* Header */
+  .site-header{position:sticky;top:0;z-index:20;background:var(--blacktop);border-bottom:2px solid var(--asphalt)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
+  .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+  .brand-mark{width:38px;height:38px;background:var(--orange);display:grid;place-items:center;color:var(--blacktop);font-family:var(--head);font-weight:900;font-size:1.4rem}
+  .brand-name{font-family:var(--head);font-weight:800;text-transform:uppercase;line-height:1;font-size:1.05rem;letter-spacing:.03em}
+  .brand-name small{display:block;font-size:.7rem;color:var(--aggregate);letter-spacing:.16em;margin-top:.2rem}
+  .nav{display:none;gap:1.5rem}
+  .nav a{font-family:var(--head);text-transform:uppercase;font-weight:600;letter-spacing:.08em;font-size:.9rem;text-decoration:none;color:var(--line)}
+  .nav a:hover{color:var(--white)}
+  .header-call{padding:.6rem 1rem;font-size:.9rem}
 
-  /* header */
-  header.top{background:var(--black);border-bottom:4px solid var(--cone);position:sticky;top:0;z-index:20}
-  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.8rem;padding-bottom:.8rem}
-  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
-  .brand-mark{width:38px;height:38px;background:var(--cone);display:grid;place-items:center}
-  .brand-name{font-family:var(--head);text-transform:uppercase;font-size:1.3rem;line-height:1;color:var(--white);letter-spacing:.03em}
-  .brand-name span{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.18em;margin-top:.2rem}
-  nav ul{display:none;list-style:none;gap:1.6rem}
-  nav a{text-decoration:none;font-family:var(--head);text-transform:uppercase;letter-spacing:.08em;font-size:.95rem;color:var(--light)}
-  nav a:hover{color:var(--cone)}
-  .top-call{font-family:var(--head);text-decoration:none;background:var(--cone);color:#111;padding:.55rem .9rem;font-size:1rem;letter-spacing:.04em;white-space:nowrap}
-  .top-call:hover{background:var(--white)}
+  /* Hero wipe */
+  .hero{position:relative;background:var(--charcoal)}
+  .wipe{position:relative;width:100%;height:78vh;min-height:520px;max-height:860px;overflow:hidden;--pos:50%}
+  .wipe figure{position:absolute;inset:0;margin:0}
+  .wipe img{width:100%;height:100%;object-fit:cover}
+  .wipe .before{background:#4a4c4e}
+  .wipe .before img{filter:saturate(.7)}
+  .wipe .after{background:#0e0f10;clip-path:polygon(calc(var(--pos) + 12%) 0,100% 0,100% 100%,calc(var(--pos) - 12%) 100%)}
+  .wipe .seam{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom right,transparent calc(50% - 2px),var(--orange) calc(50% - 2px),var(--orange) calc(50% + 2px),transparent calc(50% + 2px));
+    clip-path:polygon(calc(var(--pos) + 12% - 3px) 0,calc(var(--pos) + 12% + 3px) 0,calc(var(--pos) - 12% + 3px) 100%,calc(var(--pos) - 12% - 3px) 100%);background:var(--orange)}
+  .wipe .label{position:absolute;top:1rem;font-family:var(--head);font-weight:800;text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;padding:.35rem .65rem;background:var(--blacktop);border:2px solid var(--white)}
+  .wipe .label-before{left:1rem}
+  .wipe .label-after{right:1rem;border-color:var(--orange);color:var(--orange)}
+  .wipe-control{position:absolute;left:0;right:0;bottom:0;z-index:3}
+  .wipe-control input{width:100%;-webkit-appearance:none;appearance:none;background:transparent;height:44px;cursor:pointer}
+  .wipe-control input::-webkit-slider-runnable-track{height:6px;background:rgba(255,255,255,.25)}
+  .wipe-control input::-moz-range-track{height:6px;background:rgba(255,255,255,.25)}
+  .wipe-control input::-webkit-slider-thumb{-webkit-appearance:none;width:44px;height:28px;margin-top:-11px;background:var(--orange);border:3px solid var(--blacktop);border-radius:2px}
+  .wipe-control input::-moz-range-thumb{width:38px;height:22px;background:var(--orange);border:3px solid var(--blacktop);border-radius:2px}
+  .hero-copy{position:absolute;z-index:2;left:0;right:0;bottom:56px}
+  .hero-panel{background:rgba(21,22,23,.92);border-left:8px solid var(--orange);padding:1.5rem 1.25rem;max-width:640px}
+  .hero h1{font-size:clamp(2.6rem,10vw,5.6rem)}
+  .hero h1 span{color:var(--orange)}
+  .hero p{margin:1rem 0 1.4rem;color:var(--line);font-size:1.1rem;max-width:52ch}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem}
 
-  /* hero */
-  .hero{position:relative;background:var(--blacktop);overflow:hidden;padding:3.5rem 0 0}
-  .hero-head{position:relative;z-index:2;padding-bottom:4.5rem}
-  .kicker{display:inline-block;font-family:var(--head);text-transform:uppercase;letter-spacing:.2em;font-size:.9rem;color:var(--cone);border-left:6px solid var(--cone);padding-left:.7rem;margin-bottom:1.2rem}
-  .hero h1{font-size:clamp(3.2rem,13vw,8.5rem)}
-  .hero h1 .o{color:var(--cone)}
-  .hero-lede{max-width:34rem;margin-top:1.4rem;font-size:1.2rem;color:var(--light)}
-  .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+  /* Strip */
+  .strip{background:var(--orange);color:var(--blacktop)}
+  .strip ul{list-style:none;display:grid;grid-template-columns:1fr;gap:.25rem;padding:1rem 0}
+  .strip li{font-family:var(--head);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1rem}
 
-  /* the paved strip: one diagonal band, full bleed */
-  .strip{position:relative;z-index:3;width:130%;margin-left:-15%;transform:rotate(-4deg);background:var(--black);border-top:8px solid var(--cone);border-bottom:8px solid var(--cone);box-shadow:0 18px 0 var(--char),0 -18px 0 var(--char);padding:1.8rem 0}
-  .strip::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:var(--slate);transform:translateY(-50%)}
-  .strip-inner{position:relative;max-width:1180px;margin:0 auto;padding:0 calc(15% / 1.3 + 1.25rem);transform:rotate(4deg)}
-  .strip ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 0}
-  .strip li{font-family:var(--head);text-transform:uppercase;color:var(--white);font-size:clamp(1.1rem,4.2vw,2rem);letter-spacing:.04em;background:var(--black);padding:0 .9rem;position:relative}
-  .strip li+li::before{content:"";position:absolute;left:-5px;top:50%;width:10px;height:10px;background:var(--cone);transform:translateY(-50%) rotate(45deg)}
+  section{padding:4.5rem 0}
+  .section-head{max-width:760px;margin-bottom:2.5rem}
+  .section-head h2{font-size:clamp(2.2rem,7vw,3.8rem)}
+  .section-head p{color:var(--line);margin-top:1rem;font-size:1.1rem}
 
-  .hero-base{position:relative;z-index:1;background:var(--char);margin-top:-3rem;padding:6rem 0 3.5rem;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
-  .stat{display:grid;gap:1.5rem;align-items:end}
-  .stat-num{font-family:var(--head);font-size:clamp(7rem,32vw,15rem);line-height:.8;color:var(--cone)}
-  .stat-copy h2{font-size:clamp(1.8rem,6vw,2.8rem)}
-  .stat-copy p{margin-top:.8rem;max-width:32rem}
-  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem;list-style:none}
-  .towns li{font-family:var(--head);text-transform:uppercase;letter-spacing:.06em;font-size:.95rem;border:2px solid var(--slate);padding:.3rem .7rem;color:var(--white)}
+  /* About */
+  .about{background:var(--charcoal)}
+  .about-grid{display:grid;gap:2rem}
+  .about-grid h2{font-size:clamp(2.2rem,7vw,3.8rem)}
+  .about-grid .lead{font-size:1.25rem;color:var(--white);margin-top:1.2rem}
+  .about-grid p+p{margin-top:1rem;color:var(--line)}
+  .photo{background:var(--gray);border:2px solid var(--asphalt);aspect-ratio:4/3;width:100%;object-fit:cover}
 
-  /* section shells */
-  section{position:relative}
-  .sec{padding:4.5rem 0}
-  .sec-head{margin-bottom:2.5rem;max-width:42rem}
-  .sec-head h2{font-size:clamp(2.5rem,9vw,4.6rem)}
-  .sec-head p{margin-top:1rem;color:var(--light)}
-  .bar{display:block;width:72px;height:8px;background:var(--cone);margin-bottom:1.1rem}
+  /* Services */
+  .services{background:var(--blacktop)}
+  .service-grid{display:grid;grid-template-columns:1fr;gap:1.25rem}
+  .service{background:var(--asphalt);display:flex;flex-direction:column;border-top:5px solid var(--gray);transition:border-color .15s}
+  .service:hover{border-top-color:var(--orange)}
+  .service img{aspect-ratio:16/10;width:100%;object-fit:cover;background:var(--gray)}
+  .service-body{padding:1.4rem 1.25rem 1.6rem}
+  .service h3{font-size:1.75rem;margin-bottom:.6rem}
+  .service p{color:var(--line)}
+  .service.featured{border-top-color:var(--orange)}
 
-  /* services */
-  #services{background:var(--blacktop)}
-  .svc-grid{display:grid;gap:0;border-top:3px solid var(--slate)}
-  .svc{display:grid;grid-template-columns:56px 1fr;gap:1rem;align-items:start;padding:1.6rem 0;border-bottom:3px solid var(--slate)}
-  .svc svg{width:48px;height:48px}
-  .svc h3{font-size:1.75rem}
-  .svc p{margin-top:.35rem;color:#c3c7cb}
+  /* Why */
+  .why{background:var(--charcoal)}
+  .why-grid{display:grid;gap:1.25rem}
+  .why-item{border:2px solid var(--gray);padding:1.6rem 1.4rem;background:var(--asphalt)}
+  .why-item h3{font-size:1.65rem;margin-bottom:.6rem}
+  .why-item h3::before{content:"";display:block;width:44px;height:6px;background:var(--orange);margin-bottom:1rem}
+  .why-item p{color:var(--line)}
 
-  /* specialties: pressed slab */
-  #built{background:var(--black);clip-path:polygon(0 3rem,100% 0,100% calc(100% - 3rem),0 100%);padding:7rem 0}
-  .slabs{display:grid;gap:1rem}
-  .slab{background:var(--char);border-left:8px solid var(--cone);padding:1.8rem 1.5rem}
-  .slab h3{font-size:1.9rem}
-  .slab p{margin-top:.6rem;color:#c3c7cb}
+  /* Specialties */
+  .special{background:var(--blacktop)}
+  .special-row{display:grid;gap:1.5rem;align-items:center;padding:2rem 0;border-top:2px solid var(--asphalt)}
+  .special-row:last-child{border-bottom:2px solid var(--asphalt)}
+  .special-row h3{font-size:clamp(1.9rem,5vw,2.8rem)}
+  .special-row p{color:var(--line);margin-top:.75rem;max-width:56ch}
 
-  /* why */
-  #why{background:var(--blacktop)}
-  .why-grid{display:grid;gap:2.5rem}
-  .why-list{list-style:none;display:grid;gap:0}
-  .why-list li{padding:1.3rem 0 1.3rem 2.2rem;border-bottom:2px solid var(--slate);position:relative}
-  .why-list li::before{content:"";position:absolute;left:0;top:1.75rem;width:14px;height:14px;background:var(--cone)}
-  .why-list strong{display:block;font-family:var(--head);font-weight:400;text-transform:uppercase;font-size:1.5rem;color:var(--white);letter-spacing:.03em}
-  .why-list span{color:#c3c7cb}
-  .quote-block{background:var(--cone);color:#111;padding:2rem 1.6rem;align-self:start}
-  .quote-block p.big{font-family:var(--head);text-transform:uppercase;font-size:clamp(2rem,7vw,3.2rem);line-height:.95}
-  .quote-block p.small{margin-top:1rem;font-size:1.1rem}
+  /* Process */
+  .process{background:var(--asphalt)}
+  .steps{list-style:none;display:grid;gap:1rem}
+  .steps li{background:var(--charcoal);padding:1.4rem;border-left:6px solid var(--orange)}
+  .steps h3{font-size:1.5rem;margin-bottom:.4rem}
+  .steps p{color:var(--line)}
 
-  /* estimate */
-  #estimate{background:var(--char);border-top:8px solid var(--cone)}
-  .est-grid{display:grid;gap:2.5rem}
-  .phone-big{display:block;font-family:var(--head);font-size:clamp(2.8rem,12vw,5.2rem);line-height:1;color:var(--cone);text-decoration:none;margin:1rem 0 .5rem;letter-spacing:.01em}
-  .phone-big:hover{color:var(--white)}
-  form{background:var(--black);padding:1.8rem 1.4rem;display:grid;gap:1rem}
-  form h3{font-size:1.8rem}
-  label{display:block;font-family:var(--head);text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;color:var(--white);margin-bottom:.35rem}
-  input,select,textarea{width:100%;font:inherit;font-size:1.05rem;background:var(--blacktop);color:var(--white);border:2px solid var(--slate);border-radius:0;padding:.8rem .9rem}
-  input:focus,select:focus,textarea:focus{border-color:var(--cone);outline:none}
-  textarea{min-height:110px;resize:vertical}
-  .form-note{font-size:.95rem;color:var(--gray)}
+  /* CTA */
+  .cta{background:var(--orange);color:var(--blacktop);padding:4rem 0}
+  .cta h2{font-size:clamp(2.4rem,9vw,5rem)}
+  .cta p{font-size:1.2rem;margin:1rem 0 1.8rem;max-width:56ch;font-weight:600}
+  .cta .phone{display:block;font-family:var(--head);font-weight:900;font-size:clamp(2.4rem,10vw,5.2rem);text-decoration:none;line-height:1;margin-bottom:1.5rem}
+  .cta .phone:hover{text-decoration:underline}
+  .cta .btn{background:var(--blacktop);color:var(--white);border-color:var(--blacktop)}
+  .cta .btn:hover{background:var(--white);color:var(--blacktop);border-color:var(--white)}
 
-  footer{background:var(--black);padding:2.5rem 0;border-top:4px solid var(--slate);font-size:1rem;color:var(--gray)}
-  footer .wrap{display:grid;gap:1rem}
-  footer strong{font-family:var(--head);font-weight:400;text-transform:uppercase;color:var(--white);font-size:1.3rem;letter-spacing:.04em}
-  footer a{color:var(--cone);text-decoration:none}
+  /* Footer */
+  footer{background:var(--blacktop);border-top:2px solid var(--asphalt);padding:3rem 0 2rem;color:var(--line)}
+  .foot-grid{display:grid;gap:2rem}
+  footer h2{font-size:1.4rem;color:var(--white);margin-bottom:.75rem}
+  footer ul{list-style:none}
+  footer li{margin-bottom:.35rem}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--orange)}
+  .fine{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--asphalt);font-size:.9rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
 
-  @media (min-width:760px){
-    nav ul{display:flex}
-    .stat{grid-template-columns:auto 1fr;gap:3rem}
-    .svc-grid{grid-template-columns:1fr 1fr;column-gap:3rem}
-    .slabs{grid-template-columns:repeat(3,1fr)}
-    .why-grid{grid-template-columns:1.3fr 1fr;gap:4rem}
-    .est-grid{grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-    form{padding:2.2rem}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-    footer .wrap{grid-template-columns:1fr auto;align-items:end}
-    .hero{padding-top:5rem}
-    .hero-head{padding-bottom:6rem}
+  /* Mobile call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex}
+  .callbar a{flex:1;border-radius:0;border:none;padding:1rem}
+  body{padding-bottom:58px}
+
+  @media (min-width:640px){
+    .strip ul{grid-template-columns:repeat(3,1fr)}
+    .service-grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .hero-panel{padding:2rem 2rem}
   }
-  @media (min-width:1100px){
-    .strip{transform:rotate(-3deg)}
-    .strip-inner{transform:rotate(3deg)}
+  @media (min-width:960px){
+    .nav{display:flex}
+    .service-grid{grid-template-columns:repeat(3,1fr)}
+    .about-grid{grid-template-columns:1.1fr 1fr;gap:3.5rem;align-items:center}
+    .why-grid{grid-template-columns:repeat(3,1fr)}
+    .special-row{grid-template-columns:1fr 1fr;gap:3rem}
+    .special-row:nth-child(even) .special-text{order:2}
+    .steps{grid-template-columns:repeat(4,1fr)}
+    .foot-grid{grid-template-columns:1.4fr 1fr 1fr}
+    .callbar{display:none}
+    body{padding-bottom:0}
+    .hero-copy{bottom:80px}
+    section{padding:6rem 0}
   }
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
 
-<header class="top">
+<header class="site-header">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Fritz Asphalt Contractors home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg width="24" height="24" viewBox="0 0 24 24"><rect x="2" y="13" width="20" height="5" fill="#111"/><rect x="5" y="6" width="10" height="7" fill="#111"/><circle cx="7" cy="20" r="2.5" fill="#111"/><circle cx="18" cy="20" r="2.5" fill="#111"/></svg>
-      </span>
-      <span class="brand-name">Fritz Asphalt<span>Contractors · NW Indiana</span></span>
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span class="brand-name">Fritz Asphalt<small>Contractors</small></span>
     </a>
-    <nav aria-label="Main">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#built">Built for Winter</a></li>
-        <li><a href="#why">Why Fritz</a></li>
-        <li><a href="#estimate">Free Estimate</a></li>
-      </ul>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Fritz</a>
+      <a href="#estimate">Estimate</a>
     </nav>
-    <a class="top-call" href="tel:+12196900634">Call (219) 690-0634</a>
+    <a class="btn btn-primary header-call" href="tel:+12196900634">Call (219) 690-0634</a>
   </div>
 </header>
 
-<main id="main">
-  <section class="hero" id="top" aria-labelledby="hero-title">
-    <div class="wrap hero-head">
-      <p class="kicker">Northwest Indiana Paving</p>
-      <h1 id="hero-title">Done right<br>the <span class="o">first</span> time.</h1>
-      <p class="hero-lede">Fritz Asphalt Contractors lays driveways, parking lots and repairs across the 219 with no-nonsense craftsmanship. Not the cheapest guy with a truck. The one you only have to call once.</p>
-      <div class="hero-ctas">
-        <a class="btn" href="#estimate">Get a Free Estimate</a>
-        <a class="btn ghost" href="tel:+12196900634">Call (219) 690-0634</a>
-      </div>
-    </div>
+<main id="top">
 
-    <div class="strip" role="presentation">
-      <div class="strip-inner">
-        <ul aria-label="What we pave">
-          <li>Driveways</li>
-          <li>Parking Lots</li>
-          <li>Repair &amp; Patching</li>
-          <li>Sealcoating</li>
-          <li>Grading</li>
-        </ul>
-      </div>
-    </div>
+  <section class="hero" aria-labelledby="hero-title" style="padding:0">
+    <div class="wipe" id="wipe">
+      <figure class="before">
+        <img data-photo-query="cracked worn asphalt driveway with potholes" alt="Cracked, worn asphalt driveway with potholes before repaving">
+      </figure>
+      <figure class="after">
+        <img data-photo-query="freshly paved black asphalt driveway close up" alt="Freshly paved, smooth black asphalt driveway after the job">
+      </figure>
+      <div class="seam" aria-hidden="true"></div>
+      <span class="label label-before">Before</span>
+      <span class="label label-after">After Fritz</span>
 
-    <div class="hero-base">
-      <div class="wrap stat">
-        <div class="stat-num" aria-hidden="true">219</div>
-        <div class="stat-copy">
-          <h2>Local crew. Owner on the job.</h2>
-          <p>We work the Gary, Hammond, Valparaiso and Merrillville corridor. When you call Fritz, you deal directly with the guy accountable for the work.</p>
-          <ul class="towns" aria-label="Areas served">
-            <li>Gary</li><li>Hammond</li><li>Valparaiso</li><li>Merrillville</li><li>NW Indiana</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="services" aria-labelledby="svc-title">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="bar" aria-hidden="true"></span>
-        <h2 id="svc-title">What we put down</h2>
-        <p>Residential and commercial asphalt work, from the base up. Tell us what you've got and we'll tell you straight what it needs.</p>
-      </div>
-      <div class="svc-grid">
-        <article class="svc">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="30" width="40" height="10" fill="#ff5a0a"/><rect x="4" y="22" width="40" height="6" fill="#3a3e42"/><rect x="4" y="14" width="40" height="6" fill="#2a2d30" stroke="#8c9196" stroke-width="2"/></svg>
-          <div><h3>Asphalt Paving</h3><p>Residential and commercial paving, built on a properly prepared base so it holds up.</p></div>
-        </article>
-        <article class="svc">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 44 L22 4 H26 L30 44 Z" fill="#3a3e42"/><path d="M8 44 L20 4" stroke="#ff5a0a" stroke-width="3"/><path d="M40 44 L28 4" stroke="#ff5a0a" stroke-width="3"/><rect x="2" y="40" width="10" height="6" fill="#8c9196"/></svg>
-          <div><h3>Driveway Installation &amp; Replacement</h3><p>New driveways and tear-out replacements with clean edges and a smooth, even finish.</p></div>
-        </article>
-        <article class="svc">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="6" width="40" height="36" fill="#2a2d30"/><path d="M16 6v18M32 6v18" stroke="#f4f5f6" stroke-width="3"/><rect x="4" y="36" width="40" height="6" fill="#ff5a0a"/></svg>
-          <div><h3>Parking Lot Paving</h3><p>Commercial lots paved with minimal downtime so your customers can keep pulling in.</p></div>
-        </article>
-        <article class="svc">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="14" width="40" height="22" fill="#3a3e42"/><path d="M14 18 L22 26 L18 30 L28 32" stroke="#141516" stroke-width="3" fill="none"/><rect x="26" y="20" width="14" height="10" fill="#ff5a0a"/></svg>
-          <div><h3>Repair &amp; Patching</h3><p>Potholes, cracks and broken sections fixed fast, before small damage turns into a big bill.</p></div>
-        </article>
-        <article class="svc">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="28" width="40" height="12" fill="#141516" stroke="#8c9196" stroke-width="2"/><rect x="10" y="8" width="20" height="10" fill="#ff5a0a"/><rect x="28" y="12" width="12" height="3" fill="#ff5a0a"/><rect x="18" y="18" width="4" height="10" fill="#8c9196"/></svg>
-          <div><h3>Sealcoating</h3><p>A protective coat that shields your asphalt from water, salt and sun and keeps it looking black.</p></div>
-        </article>
-        <article class="svc">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 36 L18 26 L30 32 L44 22 V42 H4 Z" fill="#3a3e42"/><path d="M4 30 H44" stroke="#ff5a0a" stroke-width="3"/><rect x="30" y="8" width="12" height="8" fill="#ff5a0a"/></svg>
-          <div><h3>Grading &amp; Site Prep</h3><p>Proper grade and drainage first. The pavement is only as good as what's under it.</p></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="built" aria-labelledby="built-title">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="bar" aria-hidden="true"></span>
-        <h2 id="built-title">Built for Indiana winters</h2>
-        <p>Lake-effect snow, deep freezes, spring thaws, road salt. Northwest Indiana is hard on pavement. We build for it.</p>
-      </div>
-      <div class="slabs">
-        <article class="slab">
-          <h3>Freeze-Thaw Driveways</h3>
-          <p>Durable driveway builds made to stand up to Midwest freeze-thaw cycles, season after season.</p>
-        </article>
-        <article class="slab">
-          <h3>Lots Back Open Fast</h3>
-          <p>Commercial paving planned around your business, so the lot is down for as little time as possible.</p>
-        </article>
-        <article class="slab">
-          <h3>Clean Edges &amp; Seams</h3>
-          <p>Precise edge and seam work. Tight joints keep water out, and that's what makes asphalt last.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="why" aria-labelledby="why-title">
-    <div class="wrap why-grid">
-      <div>
-        <div class="sec-head">
-          <span class="bar" aria-hidden="true"></span>
-          <h2 id="why-title">Why call Fritz</h2>
-        </div>
-        <ul class="why-list">
-          <li><strong>Owner-operated accountability</strong><span>You talk to the person responsible for the job, start to finish.</span></li>
-          <li><strong>Built for regional extremes</strong><span>Work done with Northwest Indiana weather in mind, not a one-size-fits-all spec.</span></li>
-          <li><strong>Fast turnaround on repairs</strong><span>Patching and repair jobs handled quickly, so the problem doesn't spread.</span></li>
-          <li><strong>Straight pricing, straight talk</strong><span>Clear quotes and plain answers. No runaround.</span></li>
-        </ul>
-      </div>
-      <aside class="quote-block" aria-label="Our approach">
-        <p class="big">Not the cheapest guy with a truck.</p>
-        <p class="small">The contractor you call when you want it done right the first time. Free estimates for homeowners and business owners across the 219.</p>
-        <p style="margin-top:1.4rem"><a class="btn" style="background:#111;color:#ff5a0a;border-color:#111" href="#estimate">Request an Estimate</a></p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="sec" id="estimate" aria-labelledby="est-title">
-    <div class="wrap est-grid">
-      <div>
-        <span class="bar" aria-hidden="true"></span>
-        <h2 id="est-title" style="font-size:clamp(2.5rem,9vw,4.6rem)">Get a free estimate</h2>
-        <p style="margin-top:1rem">Driveway, parking lot, patch job or sealcoat. The fastest way to get a price is to pick up the phone.</p>
-        <a class="phone-big" href="tel:+12196900634">(219) 690-0634</a>
-        <p style="color:var(--gray)">Serving Gary, Hammond, Valparaiso, Merrillville and the surrounding Northwest Indiana area.</p>
-      </div>
-
-      <form id="quote-form" aria-labelledby="form-title">
-        <h3 id="form-title">Tell us about the job</h3>
-        <div class="two">
-          <div><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-          <div><label for="f-phone">Your phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
-        </div>
-        <div class="two">
-          <div>
-            <label for="f-service">Service</label>
-            <select id="f-service" name="service">
-              <option>Driveway installation / replacement</option>
-              <option>Parking lot paving</option>
-              <option>Asphalt repair &amp; patching</option>
-              <option>Sealcoating</option>
-              <option>Grading &amp; site prep</option>
-              <option>Other asphalt paving</option>
-            </select>
+      <div class="hero-copy">
+        <div class="wrap">
+          <div class="hero-panel">
+            <span class="tag">Asphalt Contractor · Residential &amp; Commercial</span>
+            <h1 id="hero-title">Paved to <span>Outlast</span> the Next Decade</h1>
+            <p>Heavy-duty driveways and parking lots built for freeze-thaw winters and daily traffic. Straight estimates. No upsell. The owner's name is on every job.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+12196900634">Call for a Free Estimate</a>
+              <a class="btn btn-ghost" href="#services">See Services</a>
+            </div>
           </div>
-          <div><label for="f-town">Town</label><input id="f-town" name="town" type="text" placeholder="e.g. Valparaiso"></div>
         </div>
-        <div><label for="f-msg">Job details</label><textarea id="f-msg" name="details" placeholder="Size, condition, timing..."></textarea></div>
-        <button class="btn" type="submit">Send My Request</button>
-        <p class="form-note">This sends your details as a text message to (219) 690-0634. Prefer to talk? Just call.</p>
-      </form>
+      </div>
+
+      <div class="wipe-control">
+        <label for="wipe-range" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Drag to compare before and after paving</label>
+        <input type="range" id="wipe-range" min="10" max="90" value="50" aria-label="Drag to compare before and after paving">
+      </div>
     </div>
   </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <ul>
+        <li>Owner-operated accountability</li>
+        <li>Built for freeze-thaw &amp; heavy use</li>
+        <li>Straight estimates, no pressure</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div>
+        <span class="tag">Who We Are</span>
+        <h2 id="about-title">A Named Contractor. Not a Faceless Chain.</h2>
+        <p class="lead">Fritz Asphalt Contractors brings disciplined, heavy-duty paving to residential driveways and commercial lots.</p>
+        <p>We treat every pour like it has to survive the next ten years of weather and traffic, because it does. Proper base, proper grade, proper compaction. When you call, you're talking to the people who answer for the work.</p>
+        <p>Homeowners replacing a tired driveway. Property managers and business owners keeping a lot safe and open. If it gets driven on, we build it to take it.</p>
+      </div>
+      <img class="photo" data-photo-query="asphalt paving crew rolling fresh blacktop" alt="Asphalt paving crew rolling fresh blacktop on a job site">
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">What We Do</span>
+        <h2 id="services-title">Paving, Repair &amp; Everything Underneath</h2>
+        <p>From the first cut of the grader to the last coat of seal, one crew handles the whole job.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service featured">
+          <img data-photo-query="asphalt paver laying hot mix on commercial site" alt="Asphalt paver laying hot mix asphalt">
+          <div class="service-body">
+            <h3>Asphalt Paving</h3>
+            <p>Residential and commercial paving laid at the right thickness and compacted tight, so the surface holds up to load and weather.</p>
+          </div>
+        </article>
+        <article class="service featured">
+          <img data-photo-query="new residential asphalt driveway installation" alt="New residential asphalt driveway installation">
+          <div class="service-body">
+            <h3>Driveway Installation &amp; Replacement</h3>
+            <p>Tear out the cracked, sunken drive and put down one built on a solid base. New installs for new homes, too.</p>
+          </div>
+        </article>
+        <article class="service featured">
+          <img data-photo-query="freshly paved commercial parking lot with striping" alt="Freshly paved commercial parking lot">
+          <div class="service-body">
+            <h3>Parking Lot Paving</h3>
+            <p>Lots for businesses and properties that see heavy traffic every day. Built to stay smooth, drain right, and keep customers moving.</p>
+          </div>
+        </article>
+        <article class="service">
+          <img data-photo-query="worker patching pothole in asphalt road" alt="Worker patching a pothole in asphalt">
+          <div class="service-body">
+            <h3>Asphalt Repair &amp; Patching</h3>
+            <p>Cracks and potholes fixed before water and frost turn a small problem into a full replacement.</p>
+          </div>
+        </article>
+        <article class="service">
+          <img data-photo-query="sealcoating asphalt driveway with squeegee" alt="Sealcoat being applied to an asphalt driveway">
+          <div class="service-body">
+            <h3>Sealcoating</h3>
+            <p>A protective coat that shields asphalt from water, sun and salt, restores that deep black finish, and stretches the life of the surface.</p>
+          </div>
+        </article>
+        <article class="service">
+          <img data-photo-query="skid steer grading gravel base for paving" alt="Equipment grading a gravel base before paving">
+          <div class="service-body">
+            <h3>Grading &amp; Site Prep</h3>
+            <p>Excavation, grading and base work done right, because pavement is only as good as what's under it.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">Why Fritz</span>
+        <h2 id="why-title">Built Like It Has to Last</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Owner Accountability</h3>
+          <p>You deal directly with the contractor whose name is on the truck. No call centers, no hand-offs, no excuses.</p>
+        </div>
+        <div class="why-item">
+          <h3>Freeze-Thaw Ready</h3>
+          <p>Northern winters punish weak pavement. We build the base, grade and drainage to stand up to frost heave, plows and heavy use.</p>
+        </div>
+        <div class="why-item">
+          <h3>Straight Estimates</h3>
+          <p>We tell you what the job needs and what it costs. No upsell pressure, no padded line items.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="special" aria-labelledby="special-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">Specialties</span>
+        <h2 id="special-title">Where We Do Our Best Work</h2>
+      </div>
+
+      <div class="special-row">
+        <div class="special-text">
+          <h3>Durable Driveway Construction</h3>
+          <p>Your driveway takes cars, trucks, snow blowers and a hard winter every year. We build it thick, compact it hard, and slope it so water runs off instead of sinking in.</p>
+        </div>
+        <img class="photo" data-photo-query="long black asphalt driveway leading to house" alt="Long, newly paved black asphalt driveway leading to a house">
+      </div>
+
+      <div class="special-row">
+        <div class="special-text">
+          <h3>Commercial Lot Paving</h3>
+          <p>A rough lot costs you customers and invites liability. We pave and maintain lots for property managers and business owners who need it done right and done on schedule.</p>
+        </div>
+        <img class="photo" data-photo-query="asphalt roller compacting large parking lot" alt="Asphalt roller compacting a large parking lot">
+      </div>
+
+      <div class="special-row">
+        <div class="special-text">
+          <h3>Crack &amp; Pothole Repair</h3>
+          <p>Catch it early and you save the surface. We cut out damaged sections and patch them solid so the repair holds through the next freeze.</p>
+        </div>
+        <img class="photo" data-photo-query="hot asphalt crack filling repair close up" alt="Close-up of a hot asphalt crack repair">
+      </div>
+    </div>
+  </section>
+
+  <section class="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">How It Works</span>
+        <h2 id="process-title">No Runaround. Just the Job.</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Call</h3><p>Tell us what you've got: driveway, lot, repair or sealcoat.</p></li>
+        <li><h3>Free Estimate</h3><p>We look at the site and give you a straight number for what it needs.</p></li>
+        <li><h3>Prep &amp; Pave</h3><p>Grade, base, pave and compact, done by a crew that answers to the owner.</p></li>
+        <li><h3>Drive On It</h3><p>A finished surface built for traffic and weather for years to come.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta" id="estimate" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 id="cta-title">Get a Free Paving Estimate</h2>
+      <p>Call Fritz Asphalt Contractors today. Driveways, parking lots, repair, sealcoating, grading and site prep across our regional service area.</p>
+      <a class="phone" href="tel:+12196900634">(219) 690-0634</a>
+      <a class="btn" href="tel:+12196900634">Call Now</a>
+    </div>
+  </section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    <div>
-      <strong>Fritz Asphalt Contractors</strong>
-      <p>Asphalt paving, driveways, parking lots, repair, sealcoating and grading in Northwest Indiana.</p>
-      <p>Phone: <a href="tel:+12196900634">(219) 690-0634</a></p>
+    <div class="foot-grid">
+      <div>
+        <h2>Fritz Asphalt Contractors</h2>
+        <p>Heavy-duty asphalt paving for residential driveways and commercial lots. Built to outlast weather and traffic.</p>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li>Asphalt Paving</li>
+          <li>Driveways</li>
+          <li>Parking Lots</li>
+          <li>Repair &amp; Patching</li>
+          <li>Sealcoating</li>
+          <li>Grading &amp; Site Prep</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="tel:+12196900634">(219) 690-0634</a></li>
+          <li>Regional service area</li>
+          <li><a href="#estimate">Free paving estimates</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <p>&copy; 2026 Fritz Asphalt Contractors</p>
-      <p>Website sample by Wild Card Creative Co</p>
+    <div class="fine">
+      <span>&copy; 2026 Fritz Asphalt Contractors</span>
+      <span>Website sample by Wild Card Creative Co</span>
     </div>
   </div>
 </footer>
 
+<div class="callbar">
+  <a class="btn btn-primary" href="tel:+12196900634">Call for a Free Estimate</a>
+</div>
+
 <script>
-  document.getElementById('quote-form').addEventListener('submit', function(e){
-    e.preventDefault();
-    var f = e.target;
-    var body = 'Estimate request - ' + f.name.value + ' (' + f.phone.value + ')\n' +
-      'Service: ' + f.service.value + '\n' +
-      (f.town.value ? 'Town: ' + f.town.value + '\n' : '') +
-      (f.details.value ? 'Details: ' + f.details.value : '');
-    window.location.href = 'sms:+12196900634?&body=' + encodeURIComponent(body);
-  });
+  (function(){
+    var wipe=document.getElementById('wipe');
+    var range=document.getElementById('wipe-range');
+    if(!wipe||!range)return;
+    function set(){wipe.style.setProperty('--pos',range.value+'%');}
+    range.addEventListener('input',set);
+    set();
+  })();
 </script>
 </body>
 </html>
